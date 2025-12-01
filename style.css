@@ -67,9 +67,6 @@ header{
 	box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.3);
 	animation: slideleft 1.5s ease-in;
 }
-.mail-icon i{
-	color:black;
-}
 .intro{
 	z-index: 0;
 	color: white;
@@ -91,6 +88,7 @@ header{
 	box-shadow: 0px 0px 10px 5px rgba(255, 87, 51,0.5)	;
 }
 .intro a {
+	color:black;
 	margin-top: 50px;
 	font-size: 40px;
 }
