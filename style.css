@@ -16,6 +16,12 @@ header{
 	margin-bottom: 30px;
 	scroll-margin-top: 150px;
 }
+h1{
+	color:white;
+	font-family: 'Aeromorph', sans-serif;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
 .navbar{
 	height:60px;
 	z-index: 10;
