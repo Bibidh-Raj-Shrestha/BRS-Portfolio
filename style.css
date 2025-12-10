@@ -31,7 +31,7 @@ h1{
 	position:fixed;
 	width:100%; 
 	display:flex;
-	justify-content:space-between;
+	justify-content: space-between;
 	align-items:center;
 }
 .navbar a{
@@ -44,7 +44,7 @@ h1{
 	padding-right: 10px;
 }
 .navbar-pg a{
-	padding:10px;
+	padding:15px;
 	color:white;
 	font-weight: light;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -57,6 +57,26 @@ h1{
 	transition: 0.1s;
 	color: black;
 }
+.mobile-btn{
+	display:none;
+}
+.menu-icon {
+	width: 30px;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 22px;
+	margin-right: 30px;
+}
+
+.menu-icon div {
+	height: 4px;
+	background: #ffffff;
+	border-radius: 3px;
+	transition: 0.4s;
+}
+
 .hero-section{
 	display: flex;
 	margin-top:80px;
@@ -529,6 +549,11 @@ footer{
 	.navbar-pg{
 		display: none;  
 	}
+	.mobile-btn{
+		display:block;
+		background:none;
+		border:none;
+	}
 	.hero-section{
 		margin-bottom:20px;
 		width:100%;
@@ -542,7 +567,7 @@ footer{
 	.intro{
 		margin:0%;
 		padding-top:10%;
-		font-size: small;
+		font-size: medium;
 		align-self:center;
 		animation:none;
 	}
@@ -628,36 +653,41 @@ footer{
   }
 }
 @media (max-width: 480px) {
-  .skills-content h3{
-	font-size: 14px;
-  }
-  .contact-me-content form {
-    width: 90%;
-  }
+	.mobile-btn{
+		display:block;
+		background:none;
+		border:none;
+	}
+	.skills-content h3{
+		font-size: 14px;
+	}
+	.contact-me-content form {
+		width: 90%;
+	}
 
-  .contact-info, .contact-links {
-    font-size: 1rem;
-    padding: 10px;
-  }
-  .contact-info a, .contact-links a{
-	text-decoration: none;
+	.contact-info, .contact-links {
+		font-size: 1rem;
+		padding: 10px;
+	}
+	.contact-info a, .contact-links a{
+		text-decoration: none;
 
-  }
-  .contact-info span, .contact-links i {
-    width: 20px;
-    height: 20px;
-    font-size: 1.2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .contents h5 {
-    font-size: 0.85rem;
-    margin-left: 10px;
-  }
-  .contact-links-contents{
-	margin-left:20px;
-  }
+	}
+	.contact-info span, .contact-links i {
+		width: 20px;
+		height: 20px;
+		font-size: 1.2rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.contents h5 {
+		font-size: 0.85rem;
+		margin-left: 10px;
+	}
+	.contact-links-contents{
+		margin-left:20px;
+	}
 }
 
