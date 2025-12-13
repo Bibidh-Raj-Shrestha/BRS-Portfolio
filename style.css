@@ -35,19 +35,20 @@ header{
 }
 .navbar-pg{
 	padding-right: 10px;
+	display: flex;
+	gap: 20px;
 }
 .navbar-pg a{
-	padding:15px;
+	padding:10px;
 	color:white;
 	font-weight: light;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	
+	border-radius: 25px;
 }
 .navbar-pg a:hover{
 	animation: ease-in 0.2s;
-	border-radius: 25px;
 	background-color: #c7c7bc;
-	transition: 0.1s;
+	transition: 0.3s ease-in-out;
 	color: black;
 }
 .mobile-btn{
@@ -186,7 +187,7 @@ section:not(.hero-section) h2{
 	border-radius: 0px;
 }
 .about-me p{
-	color: rgb(201, 197, 205);
+	color: white;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	font-size:20px;
 	width: 80%;
@@ -223,7 +224,8 @@ section:not(.hero-section) h2{
 	background-color:  #3f3f3d;
 	display : grid;
 	width: 300px;
-	height: 400px;
+	min-height: 400px;
+	height:auto;
 	margin: 10px;
 	grid-template-columns:repeat(2,1fr);
 	grid-template-rows: 0.5fr 1fr 1fr 1fr;
@@ -358,6 +360,7 @@ section:not(.hero-section) h2{
 }
 .contact-me-content form label{
 	margin: 15px 0px 0px 10px;
+	color:white;
 	font-size: x-large;
 	align-self: flex-start;
 }
