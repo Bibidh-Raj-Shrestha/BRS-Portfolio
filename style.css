@@ -240,7 +240,7 @@ section:not(.hero-section) h2{
 	align-items: center;
 	height: 50px;
 	margin:10px;
-	color: rgba(244, 242, 242, 0.613);
+	color: white;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	font-size:20px;
 	grid-column: 1/3;
