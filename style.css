@@ -6,7 +6,7 @@ body{
 	background-color: #3f3f3d;
 	width: 100%;
 	min-height: 100vh;
-	max-width:100vw;
+	width:100%;
 	overflow-x: hidden; 
 }
 header{
@@ -14,9 +14,14 @@ header{
 	width: 100%;
 	margin: 0px;
 }
-
+#logo{
+	display:block;
+	height:50px;
+	width:auto;
+	padding-left: 15px;
+}
 .navbar{
-	height:60px;
+	min-height:60px;
 	z-index: 10;
 	padding : 10px 10px;
 	opacity: 0.9;
@@ -73,7 +78,7 @@ header{
 
 .hero-section{
 	display: flex;
-	margin-top:80px;
+	margin-top:60px;
 	min-height: 80vh;
 	height:auto;
 	width: 100%;
@@ -98,6 +103,11 @@ header{
 	margin-left: 50px;
 	padding-top:100px ;
 	animation: slideright 1.5s ease-in;
+}
+.intro-details{ 
+	margin-top:20px;
+	margin-bottom:30px;
+	width: 80%;
 }
 .intro h2, .intro span{
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -135,10 +145,6 @@ header{
 .intro i:hover{
 	color: rgb(100, 96, 96);
 	transform: translateY(-3px);
-}
-.bubble i:hover{
-	color:rgb(127, 123, 123);
-	transform: translateY(-5px);
 }
 main a:visited,
 main a:active {
@@ -511,6 +517,10 @@ footer{
 		margin:0px;
 		padding:0px;
 	}
+	.title img {
+		height: 0px;
+		padding-left: 10px;
+	}
 	.nav-active{
 		animation:slidein 0.3s ease-in forwards;
 	}
@@ -527,7 +537,7 @@ footer{
 		padding:0px;
 		width:100px;
 		height:max-content;
-		transform: translateX(100%);
+		transform: translateX(120%);
 		gap:10px;
 		overflow:hidden
 	}
@@ -546,7 +556,7 @@ footer{
 			transform: translateX(100%);
 		}
 		to {
-			transform: translateX(0);
+			transform: translateX(0%);
 		}
 	}
 	@keyframes slideout {
@@ -574,14 +584,28 @@ footer{
 		align-self:center;
 		animation:none;
 	}
-	.intro-actions{
+	.intro h2, .intro span{
+		font-size: 30px;
+	}
+	.intro-details > span{
+		width:95%;
+	}
+	.intro-details {
+		width:100%;
+		text-align:justify;
+	}
+	.intro-details{
+		display: flex;
 		justify-content: center;
+	}
+	.intro-actions{
+		margin-left: 20px;
 	}
 	.intro-actions button{
 		font-size:medium;
 	}
 	 .intro-actions a{
-		font-size:30px;
+		font-size:40px;
 	 }
 	.bubble {
 		display:none;
@@ -659,10 +683,27 @@ footer{
   }
 }
 @media (max-width: 480px) {
+	#logo{
+		height:50px;
+		padding:0px;
+		margin:0px;
+	}
+	.navbar{
+		height:40px;
+	}
 	.mobile-btn{
 		display:block;
 		background:none;
 		border:none;
+		padding:0px;
+		margin:0px;
+	}
+	.hero-section{
+		margin-bottom:0px;
+		padding:0px;
+	}
+	.intro h2, .intro span{
+		font-size: 25px;
 	}
 	.skills-content h3{
 		font-size: 14px;
