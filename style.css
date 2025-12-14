@@ -508,6 +508,9 @@ footer{
 	padding: 15px 0;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+footer p{
+	color:#ff6948;
+}
 .quick-links a{
 	display: inline-block;
 	padding:10px;
@@ -662,6 +665,11 @@ footer{
 	.project-item{
 		width:80%;
 		margin: 0px auto;
+		box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.3);
+	}
+	.project-item:hover{
+		transform: none;
+		box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.3);
 	}
 	.contact-me-content{
 		flex-direction: column;
@@ -671,6 +679,11 @@ footer{
 		width: 80%;
 		margin:0px;
 		margin-bottom: 50px;
+		box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.3);
+	}
+	.contact-me-content form:hover{
+		transform: none;
+		box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.3);
 	}
 	.contact-me-content form label{
 		font-size: large;
@@ -701,6 +714,10 @@ footer{
 		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 		font-weight: light;
 	}
+	.contact-me-content form input[type="submit"]:hover {
+		background-color: #ff5733;  
+		transform: none;     
+	}
 	.contact-info span{
 		width: 30px;
 		height:30px;
@@ -709,20 +726,35 @@ footer{
 	}
 	.contact-info, .contact-links{
 		height:fit-content;
+		box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.3);
+	}
+	.contact-info:hover, .contact-links:hover{
+		transform: none;
+		box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.3);
 	}
 	.contact-links i{
 		color:white;
 		font-size:2em;
 		margin: 10px 30px 30px 10px;
-		padding:10px;
+		padding:12px;
 		background-color: #ff5733;
 		border-radius:50%;
+	}
+	.contact-links i:hover{
+		color: white;
+		transform: none;
 	}
 	.contents h5 {
     font-size: 1rem;
     margin-left: 15px;
     margin-top: 20px;
-  }
+	}
+	footer{
+		font-size:12px ;
+	}
+	.quick-links a{
+		font-size: 14px;
+	}
 }
 @media (max-width: 480px) {
 	#logo{
@@ -783,7 +815,6 @@ footer{
 	}
 	.contact-links i{
 		font-size: 30px;
-		padding:10px;
 	}
 	.contents h5 {
 		font-size: 0.85rem;
