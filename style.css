@@ -511,13 +511,51 @@ footer{
 		margin:0px;
 		padding:0px;
 	}
+	.nav-active{
+		animation:slidein 0.3s ease-in forwards;
+	}
+	.nav-deactive{
+		animation:slideout 0.3s ease-in forwards;
+	}
 	.navbar-pg{
-		display: none;  
+		flex-direction:column;
+		position: absolute;
+		top:60px;
+		right:25px;
+		background-color: #363634;
+		border-radius:14px;
+		padding:0px;
+		width:100px;
+		height:max-content;
+		transform: translateX(100%);
+		gap:10px;
+		overflow:hidden
+	}
+	.navbar-pg a{
+		text-align: center;
+		margin:0px;
+		border-radius:inherit;
 	}
 	.mobile-btn{
 		display:block;
 		background:none;
 		border:none;
+	}
+	@keyframes slidein {
+		from {
+			transform: translateX(100%);
+		}
+		to {
+			transform: translateX(0);
+		}
+	}
+	@keyframes slideout {
+		from {
+			transform: translateX(0);
+		}
+		to {			
+			transform: translateX(100%);
+		}
 	}
 	.hero-section{
 		margin-bottom:20px;
