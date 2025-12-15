@@ -13,3 +13,21 @@ mobileBtn.addEventListener('click', () => {
     }
 });
 
+//remove menu on link click (mobile)
+// const navLinks = document.querySelectorAll('.navbar-pg a');
+// navLinks.forEach(link => {
+//     link.addEventListener('click', () => {
+//         if(navbar_pg.classList.contains('nav-active')){
+//             navbar_pg.classList.remove('nav-active');
+//             navbar_pg.classList.add('nav-deactive');
+//         }   
+//     });
+// });
+
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', function () {
+        setTimeout(() => {
+            history.replaceState(null, null, ' ');
+        }, 1);
+    });
+});
