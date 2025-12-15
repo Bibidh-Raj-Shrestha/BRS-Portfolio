@@ -439,7 +439,7 @@ section:not(.hero-section) h2{
 }
 .contact-info, .contact-links{
 	width:70%;
-	margin-left:20%;
+	margin-left:0%;
 	height:200px;
 	background-color: #3f3f3d;
 	border-radius: 14px;
@@ -486,7 +486,6 @@ section:not(.hero-section) h2{
 .contact-links i{
 	color:white;
 	font-size: 35px;
-	margin: 10px 30px 30px 10px;
 	padding:10px;
 	background-color: #ff5733;
 	border-radius:50%;
@@ -496,8 +495,9 @@ section:not(.hero-section) h2{
 	display:flex;
 	justify-content: center;
 	align-items: center;
-	gap:10px;
-	margin-top:20px ;
+	gap:15%;
+	margin-top:30px;
+	margin-bottom: 30px;
 }
 .contact-links i:hover{
 	color: rgb(156, 152, 152);
@@ -708,9 +708,6 @@ footer p{
 		width: 80%;
 		margin-left:0px;
 	}
-	.contact-info span{
-		font-size: 50%;
-	}
 	.contact-info h4, .contact-links h4{
 		font-size: 140%;
 	}
@@ -742,7 +739,6 @@ footer p{
 	.contact-links i{
 		color:white;
 		font-size:2em;
-		margin: 10px 30px 30px 10px;
 		padding:12px;
 		background-color: #ff5733;
 		border-radius:50%;
@@ -752,12 +748,11 @@ footer p{
 		transform: none;
 	}
 	.contents h5 {
-    font-size: 1rem;
-    margin-left: 15px;
-    margin-top: 20px;
+		margin-left: 15px;
+		margin-top: 22px;
 	}
 	footer{
-		font-size:12px ;
+		font-size:80% ;
 	}
 	.quick-links a{
 		font-size: 14px;
@@ -927,12 +922,57 @@ footer p{
 		transform: none;
 		box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.3);
 	}
-	.contents h5 {
-	font-size: 50%;
-	margin-left: 15px;
-	margin-top: 35px;
+	.contact-me-content form{
+		width: 80%;
 	}
-	
+	.contact-info{
+		height:180px;
+		width: 80%;
+		padding:5px;
+		font-size:120%;
+	}
+	.contact-me-content form label{
+		font-size: large;
+	}
+	.contact-me-content form input, textarea{
+		font-size: medium;
+	}
+	.contact-me-content form input[type="submit"]{
+		font-size: medium;
+	}
+	.contact-links{
+		padding:5px;
+		font-size:120%;
+		width: 80%;
+	}
+	.contents span{
+		margin-left:10px;
+	}
+	.contents h5 {
+		font-size: 65%;
+		margin-left: 15px;
+		margin-top: 35px;
+	}
+	.contact-info span{
+		width: 25px;
+		height: 25px;
+		font-size: 1.5rem;
+	}
+	.contact-links i{
+		width: 25px;
+		height: 25px;
+		font-size: 2rem;
+	}
+	.contact-links-contents{
+		gap:12%;
+	}
+	.contact-links i{
+		margin: 0px;
+		padding: 8px;
+		width:auto;
+		height:30px;
+	}
+	footer{
+		font-size:60% ;
+	}
 }
-
-
