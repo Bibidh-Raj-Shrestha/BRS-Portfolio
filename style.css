@@ -428,7 +428,11 @@ section:not(.hero-section) h2{
 	color: white;
 	transform: translateY(-3px);     
 }
-
+#form-status{
+	margin:5px 5px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+	font-size: 100%;
+}
 .contact-data{
 	display: flex;
 	flex-direction: column;

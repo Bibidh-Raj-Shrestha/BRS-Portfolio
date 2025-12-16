@@ -39,21 +39,34 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 })();
 
 const form = document.getElementById("contact-form");
+const submitBtn = document.getElementById("submit-btn");
+const statusMsg = document.getElementById("form-status");
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
-
+  submitBtn.value = "Sending...";
   emailjs.sendForm(
     "service_z9p4elg",
     "template_l086ikl",
     this
   ).then(
     () => {
-      alert("Message sent successfully!");
+      statusMsg.textContent= "✅ Message sent successfully!";
+      submitBtn.value = "Send Message";
+      statusMsg.style.display = "block";
+      setTimeout(() => {
+        statusMsg.style.display = "none";
+      }, 2000);
       form.reset();
     },
     () => {
-      alert("Failed to send message.");
+      statusMsg.textContent= "Failed to send message.";
+      submitBtn.value = "Send Message";
+      statusMsg.style.display = "block";
+      setTimeout(() => {
+        statusMsg.style.display = "none";
+      }, 3000);
+      statusMsg.textContent= "✅ Message sent successfully!";
     }
   );
 });
