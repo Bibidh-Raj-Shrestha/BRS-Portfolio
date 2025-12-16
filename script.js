@@ -24,10 +24,36 @@ mobileBtn.addEventListener('click', () => {
 //     });
 // });
 
+//remove # from url after clicking anchor link
 document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener('click', function () {
         setTimeout(() => {
             history.replaceState(null, null, ' ');
         }, 1);
     });
+});
+
+//emailjs integration
+(function () {
+  emailjs.init("-YTZzuwqBShyxD_D-");
+})();
+
+const form = document.getElementById("contact-form");
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  emailjs.sendForm(
+    "service_z9p4elg",
+    "template_l086ikl",
+    this
+  ).then(
+    () => {
+      alert("Message sent successfully!");
+      form.reset();
+    },
+    () => {
+      alert("Failed to send message.");
+    }
+  );
 });
