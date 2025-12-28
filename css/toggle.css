@@ -1,0 +1,55 @@
+.background{
+    background-color: white;
+
+}
+.toggle{
+    display: flex;
+    justify-content: flex-end;
+    width:100px;
+    height:50px;
+    background-color: grey;
+    border-radius: 100px;
+    cursor: pointer;
+}
+.toggle-on{
+    justify-content: flex-start;
+    background-color: white;
+}
+.toggle-ball{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:5px;
+    width:40px;
+    height:40px;
+    background-color: white;
+    border-radius: 100%;
+    
+}
+#sun{
+    width:30px;
+    height: 30px;
+    display: none;
+}
+#moon{
+    width:30px;
+    height:30px;
+    
+}
+.toggle-ball-on{
+    background-color: grey;
+    animation:toggle-on 1s ease;
+}
+.toggle-ball-off{
+    animation:toggle-off 1s ease-in-out;
+}
+@keyframes toggle-off{
+    from{
+        transform: translateX(-50px);
+    }
+}
+@keyframes toggle-on{
+    from{
+        transform: translateX(50px);
+    }
+}
