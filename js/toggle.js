@@ -3,10 +3,13 @@ const toggle_ball = document.getElementById("toggle-ball");
 const sun = document.getElementById("sun");
 const moon = document.getElementById("moon");
 const navbar = document.getElementById("navbar");
-// let a = document.querySelectorAll("a");
-// a.forEach(a=>{
-//     a.style.color="black";
-// })
+
+let links = document.querySelectorAll("a");
+let headers = document.querySelectorAll("h2");
+let parag = document.querySelectorAll("p");
+let headers3 = document.querySelectorAll("h3");
+
+let dark =[...links,...headers, ...parag, ...headers3]
 
 toggle.addEventListener("click",()=>
 {
@@ -21,6 +24,11 @@ toggle.addEventListener("click",()=>
         sun.style.display = "none";
         moon.style.display = "block";
         navbar.classList.toggle("navbar-on");
+
+        
+        dark.forEach(el=>{
+            el.style.color="black";
+        })
     }
     else{
         toggle_ball.classList.remove("toggle-ball-off");
@@ -32,6 +40,11 @@ toggle.addEventListener("click",()=>
         moon.style.display = "none";
         sun.style.display = "block";
         navbar.classList.toggle("navbar-on");
+
+
+        dark.forEach(el=>{
+            el.style.color="black";
+        })
     }
     
 });
