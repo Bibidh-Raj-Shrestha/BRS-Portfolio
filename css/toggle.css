@@ -41,10 +41,10 @@
 }
 .toggle-ball-on{
     background-color: rgb(167, 164, 164);
-    animation:toggle-on 1s ease;
+    animation:toggle-on 0.8s ease-in-out;
 }
 .toggle-ball-off{
-    animation:toggle-off 1s ease-in-out;
+    animation:toggle-off 0.8s ease-in-out;
 }
 @keyframes toggle-off{
     from{
