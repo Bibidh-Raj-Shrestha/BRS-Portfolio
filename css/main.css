@@ -412,12 +412,18 @@ section:not(.hero-section) h2{
 	font-size: large;
 	resize: none;
 }
-.contact-me-content input::placeholder,
-.contact-me-content textarea::placeholder {
+.contact-me-content form input::placeholder,
+.contact-me-content form textarea::placeholder {
 	color: #9da5b1;      
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 	opacity: 1;
 }
+.contact-me-content.black-plc form input::placeholder,
+.contact-me-content.black-plc form textarea::placeholder {
+  color: rgb(115, 114, 114);
+}
+
+
 .contact-me-content form input[type="submit"] {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 	background-color: #ff5733;
